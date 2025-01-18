@@ -1,0 +1,58 @@
+body{
+    background-image: url(../images/back-image.png);
+    background-size: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Poppins';
+}
+
+.mybtn{
+    background: linear-gradient(to right,rgb(255, 114, 227),rgb(240, 36, 210));
+    border: none;
+    border-radius: 20vh;
+    border-top-right-radius: 0%;
+    padding: 2vh 4vh;
+    transition: .5s;
+}
+
+.mybtn:hover{
+    scale: 1.1;
+    margin-left:1vh;
+}
+
+.logo{
+    width: 25vh;
+}
+.pic{
+    animation: anim 1s  forwards 2s;
+    opacity: 0;
+}
+.make{
+    animation: anim 1s forwards ;
+    opacity: 0;
+}
+.newFriends{
+    animation: anim 1s forwards .5s;
+    opacity: 0;
+}
+.parag{
+    animation: anim 1s forwards 1s;
+    opacity: 0;
+}
+
+.joinUS{
+    animation: anim 1s forwards 1.5s;
+    opacity: 0;
+}
+
+@keyframes anim {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
